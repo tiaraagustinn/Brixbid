@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#80000000"
+    android:id="@+id/main"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="350dp"
+        android:orientation="vertical"
+        android:background="@drawable/bg_dialog"
+        android:padding="32dp"
+        android:gravity="center">
+
+        <!-- Success Icon -->
+        <RelativeLayout
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_marginBottom="30dp">
+
+            <!-- Outer Circle -->
+            <View
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:background="@drawable/bg_circle_light_green"
+                android:layout_centerInParent="true"/>
+
+            <!-- Inner Circle -->
+            <View
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:background="@drawable/bg_circle_green"
+                android:layout_centerInParent="true" />
+
+            <!-- Check Icon -->
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/ic_check_white"
+                android:layout_centerInParent="true" />
+
+        </RelativeLayout>
+
+        <!-- Success Message -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lelang Berhasil Diunggah"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:gravity="center"
+            android:layout_marginBottom="20dp" />
+
+        <!-- Button -->
+        <Button
+            android:id="@+id/btn_kembali_beranda"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="Kembali ke Beranda"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/bg_button_brown"
+            android:textSize="17sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main"
+    android:background="#99000000">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:layout_margin="32dp"
+        android:padding="24dp"
+        android:background="@drawable/kolom"
+        android:gravity="center_horizontal"
+        android:elevation="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Masukkan Nomor Peserta Lelang"
+            android:textStyle="bold"
+            android:textSize="17sp"
+            android:textColor="#000000"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Input Nomor Peserta -->
+        <EditText
+            android:id="@+id/etNomorPeserta"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Nomor Peserta"
+            android:paddingHorizontal="16dp"
+            android:background="@drawable/bg_input_oval"
+            android:textColor="#000000"
+            android:textColorHint="#999999"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Teks beli nomor peserta -->
+        <TextView
+            android:id="@+id/tvBeliNomor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Belum punya nomor peserta? "
+            android:textColor="#888888"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/btnNpl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Beli Nomor Peserta"
+            android:textColor="#FF4081"
+            android:textSize="13sp"
+            android:layout_below="@id/tvBeliNomor"
+            android:layout_marginBottom="16dp"
+            android:clickable="true"
+            android:focusable="true" />
+        <!-- Tombol Cek -->
+        <Button
+            android:id="@+id/btnCek"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cek nomor"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#34A853"
+            android:paddingVertical="12dp" />
+
+    </LinearLayout>
+</RelativeLayout>

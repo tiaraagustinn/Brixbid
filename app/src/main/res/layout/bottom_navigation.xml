@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:orientation="horizontal"
+    android:id="@+id/bottNav"
+    android:background="@drawable/bg_oval_luar"
+    android:elevation="0dp">
+
+    <LinearLayout
+        android:id="@+id/nav_beranda"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:clickable="true"
+        android:focusable="true"
+        android:background="?android:attr/selectableItemBackground">
+
+        <ImageView
+            android:id="@+id/icon_beranda"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/home" />
+
+        <TextView
+            android:id="@+id/text_beranda"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Beranda"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            android:textColor="#ffff"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/nav_lelang"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:clickable="true"
+        android:focusable="true"
+        android:background="?android:attr/selectableItemBackground">
+
+        <ImageView
+            android:id="@+id/icon_lelang"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/lelang" />
+
+        <TextView
+            android:id="@+id/text_lelang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lelang"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            android:textColor="#ffff"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/nav_menu"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:clickable="true"
+        android:focusable="true"
+        android:background="?android:attr/selectableItemBackground">
+
+        <ImageView
+            android:id="@+id/icon_menu"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/auction" />
+
+        <TextView
+            android:id="@+id/text_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Open Lelang"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            android:textColor="#ffff"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/nav_notifikasi"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:clickable="true"
+        android:focusable="true"
+        android:background="?android:attr/selectableItemBackground">
+
+        <ImageView
+            android:id="@+id/icon_notifikasi"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/inbox" />
+
+        <TextView
+            android:id="@+id/text_notifikasi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Notifikasi"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            android:textColor="#ffff"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/nav_akun"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:clickable="true"
+        android:focusable="true"
+        android:background="?android:attr/selectableItemBackground">
+
+        <ImageView
+            android:id="@+id/icon_akun"
+            android:layout_width="35dp"
+            android:layout_height="30dp"
+            android:src="@drawable/user" />
+
+        <TextView
+            android:id="@+id/text_akun"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Akun"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            android:textColor="#ffff"/>
+
+    </LinearLayout>
+
+</LinearLayout>

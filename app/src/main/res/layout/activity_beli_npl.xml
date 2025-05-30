@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:background="#FFF4E0"
+    android:fitsSystemWindows="true">
+
+    <!-- Header -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="#FFF4E0"
+        android:paddingBottom="12dp"
+        android:paddingLeft="20dp"
+        android:paddingHorizontal="16dp">
+
+        <ImageView
+            android:id="@+id/btn_back"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/backarrow"
+            android:background="@drawable/back_arrow_circle"
+            android:layout_marginEnd="16dp"
+            android:padding="12dp"
+            android:scaleType="fitCenter" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="BELI NPL"
+            android:layout_marginEnd="64dp"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:fontFamily="sans-serif-black"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#FEF7F7"
+        android:padding="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Lengkapi Data Anda -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lengkapi Data Anda"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:textColor="#000000"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="25dp" />
+
+            <!-- Identitas diri pilihan -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Identitas diri yang dipilih"
+                android:textSize="14sp"
+                android:textColor="#666666"
+                android:layout_marginBottom="8dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="115dp"
+                android:orientation="horizontal"
+                android:layout_marginBottom="16dp">
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rb_personal"
+                        android:layout_width="0dp"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:paddingRight="20dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="Personal"
+                        android:drawableTop="@drawable/person"
+                        android:gravity="center"
+                        android:background="@drawable/selector_radio_button"
+                        android:layout_marginEnd="8dp"
+                        android:checked="true" />
+
+                    <RadioButton
+                        android:id="@+id/rb_bisnis"
+                        android:layout_width="0dp"
+                        android:paddingTop="14dp"
+                        android:paddingBottom="10dp"
+                        android:paddingRight="20dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="Bisnis"
+                        android:drawableTop="@drawable/bisnis"
+                        android:gravity="center"
+                        android:background="@drawable/selector_radio_button"
+                        android:layout_marginEnd="8dp" />
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <!-- No. KTP -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No. Telepon"
+                android:textSize="14sp"
+                android:textColor="#000000"
+                android:layout_marginBottom="8dp" />
+
+            <EditText
+                android:id="@+id/et_no_ktp"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:hint="+62"
+                android:background="@drawable/bg_edittext"
+                android:paddingHorizontal="12dp"
+                android:inputType="number"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Pembayaran -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pembayaran"
+                android:textSize="14sp"
+                android:textColor="#000000"
+                android:layout_marginBottom="8dp" />
+
+            <Spinner
+                android:id="@+id/spinner_pembayaran"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/bg_spinner"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Nama Lengkap -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nama Lengkap"
+                android:textSize="14sp"
+                android:textColor="#000000"
+                android:layout_marginBottom="8dp" />
+
+            <EditText
+                android:id="@+id/et_nama_lengkap"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/bg_edittext"
+                android:hint="Sesuai Nama KTP"
+                android:paddingHorizontal="12dp"
+                android:inputType="textPersonName"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Scan KTP -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Scan KTP"
+                android:textSize="14sp"
+                android:textColor="#000000"
+                android:layout_marginBottom="8dp" />
+
+            <LinearLayout
+                android:id="@+id/layout_scan_ktp"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="@drawable/bg_upload"
+                android:layout_marginBottom="24dp">
+
+                <ImageView
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:src="@drawable/upload2"
+                    android:layout_marginBottom="8dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Upload KTP"
+                    android:textSize="12sp"
+                    android:textColor="#666666" />
+
+            </LinearLayout>
+
+            <!-- Button Lanjutkan -->
+            <Button
+                android:id="@+id/btn_lanjutkan"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="Lanjutkan"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/bg_button_primary"
+                android:layout_marginBottom="16dp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <include layout="@layout/bottom_navigation" />
+
+
+</LinearLayout>

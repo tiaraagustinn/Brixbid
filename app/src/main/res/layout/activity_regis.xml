@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/registrasi"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF5E5"
+    android:fitsSystemWindows="true">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="24dp"
+            android:gravity="center_horizontal">
+
+            <!-- Logo -->
+            <ImageView
+                android:id="@+id/logoImage"
+                android:layout_width="200dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="50dp"
+                android:src="@drawable/logo" />
+
+            <!-- Judul -->
+            <TextView
+                android:id="@+id/titleText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Daftar"
+                android:textColor="#5C3B28"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                android:layout_marginTop="12dp" />
+
+            <!-- Ilustrasi -->
+            <ImageView
+                android:id="@+id/illustrationImage"
+                android:layout_width="200dp"
+                android:layout_height="130dp"
+                android:layout_marginTop="26dp"
+                android:src="@drawable/ilustrasi"
+                android:contentDescription="Ilustrasi Daftar"
+                android:scaleType="fitCenter" />
+
+            <!-- Nama Pengguna -->
+            <LinearLayout
+                android:layout_width="320dp"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:background="@drawable/bg_oval_luar"
+                android:gravity="center_vertical"
+                android:padding="4dp"
+                android:layout_marginTop="50dp">
+
+                <LinearLayout
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginEnd="6dp"
+                    android:background="@drawable/bg_icon_circle"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/inputuser"
+                        android:layout_width="30dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/user"
+                        android:contentDescription="icon" />
+                </LinearLayout>
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:hint="Nama Pengguna"
+                    android:textColor="#5E3C32"
+                    android:textColorHint="#A67C73"
+                    android:background="@drawable/bg_input_oval"
+                    android:paddingStart="15dp"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <!-- Email -->
+            <LinearLayout
+                android:layout_width="320dp"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:background="@drawable/bg_oval_luar"
+                android:gravity="center_vertical"
+                android:padding="4dp"
+                android:layout_marginTop="5dp">
+
+                <LinearLayout
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginEnd="8dp"
+                    android:background="@drawable/bg_icon_circle"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/inputlock"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/vector"
+                        android:contentDescription="icon" />
+                </LinearLayout>
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="400"
+                    android:hint="Email"
+                    android:textColor="#5E3C32"
+                    android:textColorHint="#A67C73"
+                    android:background="@drawable/bg_input_oval"
+                    android:paddingStart="15dp"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <!-- Password -->
+            <LinearLayout
+                android:layout_width="320dp"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:background="@drawable/bg_oval_luar"
+                android:gravity="center_vertical"
+                android:padding="4dp"
+                android:layout_marginTop="5dp">
+
+                <LinearLayout
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginEnd="8dp"
+                    android:background="@drawable/bg_icon_circle"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/inputpass"
+                        android:layout_width="40dp"
+                        android:layout_height="23dp"
+                        android:src="@drawable/lock"
+                        android:contentDescription="icon" />
+                </LinearLayout>
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="400"
+                    android:hint="Password"
+                    android:textColor="#5E3C32"
+                    android:textColorHint="#A67C73"
+                    android:background="@drawable/bg_input_oval"
+                    android:paddingStart="15dp"
+                    android:inputType="textPassword"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <!-- Konfirmasi Password -->
+            <LinearLayout
+                android:layout_width="320dp"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:background="@drawable/bg_oval_luar"
+                android:gravity="center_vertical"
+                android:padding="4dp"
+                android:layout_marginTop="5dp">
+
+                <LinearLayout
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginEnd="8dp"
+                    android:background="@drawable/bg_icon_circle"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/inputkonvpass"
+                        android:layout_width="40dp"
+                        android:layout_height="23dp"
+                        android:src="@drawable/padlock"
+                        android:contentDescription="icon" />
+                </LinearLayout>
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="400"
+                    android:hint="Password"
+                    android:textColor="#5E3C32"
+                    android:textColorHint="#A67C73"
+                    android:background="@drawable/bg_input_oval"
+                    android:paddingStart="15dp"
+                    android:inputType="textPassword"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <!-- Tombol -->
+            <Button
+                android:id="@+id/btnRegis"
+                android:layout_width="240dp"
+                android:layout_height="50dp"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:text="Register"
+                android:textAllCaps="true"
+                android:background="@drawable/button_oval"
+                android:layout_marginTop="24dp"
+                android:layout_marginHorizontal="16dp" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

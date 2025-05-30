@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main"
+    android:background="#99000000">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="32dp"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:background="@drawable/kolom"
+        android:gravity="center_horizontal"
+        android:elevation="10dp">
+
+        <!-- Icon -->
+        <ImageView
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:src="@drawable/logout"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Teks -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Keluar dari akun?"
+            android:textSize="16sp"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Tombol Aksi -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btnBatal"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Kembali"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#A06A52"
+                android:layout_marginEnd="8dp" />
+
+            <Button
+                android:id="@+id/btnKeluar"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Keluar"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#D32F2F" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
