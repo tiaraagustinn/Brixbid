@@ -40,6 +40,10 @@
 ### 🖼️ **Edit Foto Profil**
 - Mengganti foto profil pengguna melalui file dari perangkat.
 
+### 🎯 **Ikut Lelang**
+- Pengguna yang telah membeli NPL dapat mengikuti lelang barang.
+- Sistem menampilkan penawaran terbaru dan memberi notifikasi jika pengguna memenangkan atau kalah dalam lelang.
+
 ### 🪪 **Pembelian NPL (Nomor Peserta Lelang)**
 - Membeli NPL untuk mengikuti lelang tertentu.
 - Informasi harga dan ketentuan NPL.
